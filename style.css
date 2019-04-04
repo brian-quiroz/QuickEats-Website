@@ -1,0 +1,300 @@
+/*--------------------------------<header>--------------------------------*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #f37308;
+    overflow: hidden;
+}
+
+/*#loggedInBar {
+  background-color: white;
+  text-align: center;
+  font-size: 17px;
+  font-family: Verdana;
+  color: black;
+}*/
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;margin-top: -4pt;
+    padding-bottom: 0pt;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 22px 55px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Verdana;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #FAAC58;
+    color: black;
+}
+
+/* Logo button */
+#logo {
+  background-image: url(http://farm1.staticflickr.com/820/39716762260_a010a4bcdc_b.jpg);
+  background-repeat: no-repeat;
+  /*background-color: #4CAF50;*/
+  color: white;
+}
+
+#logoutButton {
+  margin-top: -4pt;
+  padding-bottom: 0pt;
+}
+
+/*#logoutButton : hover {
+  background-color: #f37308;
+}*/
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Hide bullets in bullet points
+ul
+{
+  list-style-type: none;
+}
+
+#userIDLogin, #passwordLogin, #loginButton {
+  width: 300px;
+}*/
+
+/* When thbluee screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  /*.topnav ul:not(:first-child) {display: none}*/
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /*.topnav.responsive ul {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 300px;
+  }*/
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#welcomeMessage {
+  background-color: #f37308;
+}
+
+/*--------------------------------<body>--------------------------------*/
+
+body {
+  background-color: #40b800;
+}
+
+#mainbox {
+  margin-top: 35px;
+  margin-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 100px;
+  color: white;
+}
+
+h2 {
+  color: purple;
+}
+
+h3, h4 {
+  color: white;
+}
+
+h5 {
+  color: white;
+  font-size: 18px;
+}
+
+/*--------------------------------home.php--------------------------------*/
+.highlighter {
+  background-color: #006699;
+  opacity: 0.8;
+  text-align: center;
+}
+
+#top-banner {
+  background: url(https://www.filepicker.io/api/file/3j3rEWE4Rsu1AkFfTUQC) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background: url(https://www.filepicker.io/api/file/3j3rEWE4Rsu1AkFfTUQC);
+  background-size: 100% 100%;*/
+  font-family: Verdana;
+  font-size: 120px;
+  color: white;
+  padding-left: 100pt;
+  padding-right: 100pt;
+  padding-top: 200pt;
+  padding-bottom: 200pt;
+}
+
+/*menu.html*/
+.item {
+  width: 420px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+/*menu.html*/
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+/*--------------------------------signup.php--------------------------------*/
+
+#submitButton {
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+}
+
+#resetButton {
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+}
+
+/*--------------------------------snakegame.php--------------------------------*/
+
+#submitGame {
+  font-size: 16px;
+  width: 140px;
+  height: 40px;
+}
+
+#resetGame {
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+}
+
+#snake{
+  margin-top: 30px;
+  border: 1px solid #000;
+}
+
+/*--------------------------------profile.php--------------------------------*/
+
+#toggleAllergiesInput {
+  font-size: 12px;
+  width: 100px;
+  height: 30px;
+}
+
+#newAllergies {
+  display: none;
+}
+
+#updateAllergies {
+  display: none;
+  font-size: 12px;
+  width: 100px;
+  height: 30px;
+}
+
+/*--------------------------------<footer>--------------------------------*/
+
+footer {
+  color: white;
+  padding-bottom: 5px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+
+.fa {
+    padding: 7px;
+    margin: 8px;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-free-code-camp {
+    background: #1E8901;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google-plus {
+  background: #C70039;
+  color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
+
+.fa-weixin {
+  background: #02fc1f;
+  color: white;
+}
+
+.fa-snapchat {
+  background: #FFF706;
+  color: white;
+}
+
+.fa-instagram {
+  background: #FF1293;
+  color: white;
+}

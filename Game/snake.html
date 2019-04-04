@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+	This html is not connected to the website and it is not possible to run this game using this HTML file.
+	The php version used in the website can be found as snakegame.php one folder above this one.
+	To run game please visit our group's website: https://people.eecs.ku.edu/~r229q057/team3_project4/Website/home.php .
+	Please note it is necessary to sign up and login to obtain access to the game.
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Snake game">
+	<meta name="author" content="Qixiang Liu">
+	<meta name="keywords" content="HTML, Javascript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Snake</title>
+	<script type="text/javascript" src="snake.js"></script>
+	<style>
+		body{
+			text-align: center;
+		}
+		#snake{
+			margin-top: 30px;
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body onload="startGame()">
+	<p style="float:left">
+		Rule:
+		W/A/S/D/Arrows control direation <br>
+		Speed 1~4 Each Point:10<br>
+		Speed 5~6 Each Point:30<br>
+		Speed >=7  Each Point:80<br>
+		Dead: Hit Wall OR Hit Myself
+	</p>
+	<canvas id="snake" width="" height=""></canvas> <br>
+	<form method="post">
+	<h4 id="score">Score: 0</h4>
+	<h4 id="speed">Speed: 1</h4>
+	<input type="submit" value ="Submit">
+	<button id="reset" onclick="reset()">Reset</button><br>
+	</form>
+</body>
