@@ -1,4 +1,4 @@
-#QuickEats
+# QuickEats Website
 
 
 This website is my part of a group project for my EECS 448 (Software Engineering) class.
